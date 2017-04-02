@@ -1,0 +1,44 @@
+$primary: #006699;
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+h2 {
+	color: $primary;
+	text-align: center;
+}
+.panoGallery {
+	display: -webkit-flex; /* Safari */
+  display: flex;
+	.panoList{
+		width: 210px;
+		height: 100%;
+	}
+	.panoList ul{
+		list-style: none;
+		padding: 0px 5px;
+		margin: 0px;
+		li{
+			cursor: pointer;
+			margin-bottom: 40px;
+			img {
+				max-height: 200px;
+				max-width :200px;
+			}
+			p{
+				text-align: center;
+				font-size: 18px;
+			}
+		}
+	}
+
+	.panoView {
+		width: 100%;
+		padding: 0px 5px;
+		canvas{
+		//	max-width : 100%;
+	//		max-height: 100%;
+		}
+	}
+}
